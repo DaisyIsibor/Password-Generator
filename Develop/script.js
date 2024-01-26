@@ -6,18 +6,9 @@
  
   var PasswordLength;
   var UpperCase;
-
-
- // Write password to the #password input
-
- //let length = prompt ("length must me 8-128 characters ! click OK to continue")
-
-//let uppercase = prompt("uppercase required in password");
-
-  //let lowercase = prompt("Lowercase required in password");
-  //let specialcharater = prompt("Special characters required");
-
- // let number = prompt("Please include numbers in password");
+  var Numb;
+  var SpecialCharacter;
+  var LowerCase;
 
  
  function generatePassword(){
@@ -29,43 +20,105 @@ PasswordLength = prompt("Please enter desired password between 8-128 ");
  }else if (isNaN(PasswordLength)){
   alert("Length invalid. please provide valid password length");
  }
- return;
-}
-console.log(generatePassword())
-
-function UpperCaseP(){
-  UpperCase = prompt("Do you want to include uppercase in password Y/N");
+ UpperCase = prompt("Do you want to include uppercase in password Y/N");
 
   if(UpperCase === "Y"){
   UpperCase =true;
-return UpperCase;
-
-
-}else if(UpperCase ===null || UpperCase ===""){
+  }else if(UpperCase ==="N"){
+  UpperCase = true;
+  }else if(UpperCase === null || UpperCase ===""){
   alert("Please choose Y/N");
-}return UpperCaseP();
+}else if (UpperCase <"Y"){
+  alert("Please input Valid Answer");
+ }else if (UpperCase <"N"){
+  alert("Please input Valid Answer");
+ }
+
+Numb = prompt("Input Y/N if numbers should be included on password");
+ if(Numb ==="Y"){
+  Numb =true;
+ }else if (Numb ==="N"){
+  Numb = true;
+ }else if(Numb === null || Numb === ""){
+  alert("Please choose Y/N")
+ }else if (Numb <"Y"){
+  alert("Please input Valid Answer");
+ }else if (Numb <"N"){
+  alert("Please input Valid Answer");
+ }
+
+ SpecialCharacter=prompt("Do you want to include Special Characters Y/N");
+ if(SpecialCharacter==="y"){
+  SpecialCharacter=true;
+ }else if(SpecialCharacter ==="N"){
+  SpecialCharacter = true;
+ }else if(SpecialCharacter === null || SpecialCharacter ===""){
+  alert("Please input Y/N")
+ }else if (SpecialCharacter <"Y"){
+  alert("Please input Valid Answer");
+ }else if (SpecialCharacter <"N"){
+  alert("Please input Valid Answer");
+ }
+ 
+
+ LowerCase = prompt("Do you want to include Lowercase in password Y/N");
+
+  if(LowerCase === "Y"){
+    LowerCase =true;
+  }else if(LowerCase ==="N"){
+    LowerCase = true;
+  }else if(LowerCase === null ||LowerCase ===""){
+  alert("Please choose Y/N");
+}else if (LowerCase <"Y"){
+  alert("Please input Valid Answer");
+ }else if (LowerCase <"N"){
+  alert("Please input Valid Answer");
+ }
+ var pass = '';
+var str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' + 'abcdefghijklmnopqrstuvwxyz' + '1234567890' + '!@#$%^&()_+~`|}{[]:;?><,./-=';
+ for (var i = 0; i <= 128; i++) {
+  var char = Math.floor(Math.random() * str.length + 1);
+  pass + = str.charAt(char)
 }
-
-
-  
-  
-  
-function writePassword() {
-  var pass = '';
-  var str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' + 'abcdefghijklmnopqrstuvwxyz' + '1234567890' + '!@#$%^&()_+~`|}{[]:;?><,./-=';
-   for (var i = 1; i <= 128; i++) {
-    var char = Math.floor(Math.random() * str.length + 1);
-    pass += str.charAt(char)
-  }
 return pass;
 }
- 
+
+
+
+
+
+
+
+
+
+
+var pass = '';
+var str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' + 'abcdefghijklmnopqrstuvwxyz' + '1234567890' + '!@#$%^&()_+~`|}{[]:;?><,./-=';
+ for (var i = 0; i <= 128; i++) {
+  var char = Math.floor(Math.random() * str.length + 1);
+  pass += str.charAt(char)
+}
+
+
+
+
+
+
+  
+  
+  
+//function writePassword() {
+
+
+
+
 
 console.log(writePassword())
 
  
 function writePassword() {
-  var password = generatePassword();
+  console.log(generatePassword())
+  //var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
 passwordText.value = password;
