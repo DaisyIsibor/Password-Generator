@@ -12,8 +12,8 @@ LINK TO MY PASSWORD GENERATOR
 When generate passowrd is clicked, a prompt pops up to select the length of passowrd (Note) length less than 8 or more than 128 won't work. 
 After selecting length of passowrd then a pop up with different questionair on the characters/ numbers or symbols to include on the password. if you click OK then it will be included on the password but when you click cancel then it will not be included on the passowrd. 
 
-## Cumpulsory
-  There is a cumpulsory criteria on the selection in order to generate a passowrd. one of the criteria must be selected between ( Uppercase, Lowercase, numbers and special characters) If one is not selected to be included on the password and error message "UNDEFINED" will display in the box. 
+## Compulsory
+  There is a compulsory criteria on the selection in order to generate a passowrd. one of the criteria must be selected between ( Uppercase, Lowercase, numbers and special characters) If one is not selected to be included on the password and error message "UNDEFINED" will display in the box. 
 
 
   Once all options are selected, a secure password will automatically generate.
