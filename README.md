@@ -19,7 +19,7 @@ After selecting length of passowrd then a pop up with different questionair on t
   Once all options are selected, a secure password will automatically generate.
 
 
-
+![alt text](image.png)
 
 
 ## Your Task
