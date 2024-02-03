@@ -1,8 +1,35 @@
 # 03 JavaScript: Password Generator
 
+LINK TO MY PASSWORD GENERATOR
+
+
+
+
+
+
+## To explain in detailed on this refractored password generator, 
+
+When generate passowrd is clicked, a prompt pops up to select the length of passowrd (Note) length less than 8 or more than 128 won't work. 
+After selecting length of passowrd then a pop up with different questionair on the characters/ numbers or symbols to include on the password. if you click OK then it will be included on the password but when you click cancel then it will not be included on the passowrd. 
+
+## Cumpulsory
+  There is a cumpulsory criteria on the selection in order to generate a passowrd. one of the criteria must be selected between ( Uppercase, Lowercase, numbers and special characters) If one is not selected to be included on the password and error message "UNDEFINED" will display in the box. 
+
+
+  Once all options are selected, a secure password will automatically generate.
+
+
+
+
+
 ## Your Task
 
+
 This week's Challenge requires you to modify starter code to create an application that enables employees to generate random passwords based on criteria that they’ve selected. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished, responsive user interface that adapts to multiple screen sizes.
+
+
+
+
 
 The password can include special characters. If you’re unfamiliar with these, see this [list of password special characters](https://www.owasp.org/index.php/Password_special_characters) from the OWASP Foundation.
 
