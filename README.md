@@ -3,7 +3,7 @@
 LINK TO MY PASSWORD GENERATOR
 
 
-https://daisyisibor.github.io/Generate-Password-assignment-3/
+ https://daisyisibor.github.io/Password-Generator/
 
 
 
