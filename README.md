@@ -15,12 +15,7 @@ This Password Generator is a tool designed to assist users in creating new, secu
 
  2.Follow the prompts to select the desired criteria for your password, including length and character types.
 
-<<<<<<< HEAD
  3.Ensure that you meet the minimum requirements for password length and character type selection.
-=======
-## Compulsory
-  There is a compulsory criteria on the selection in order to generate a passowrd. one of the criteria must be selected between ( Uppercase, Lowercase, numbers and special characters) If one is not selected to be included on the password and error message "UNDEFINED" will display in the box. 
->>>>>>> fbff9683bbf8ab4af564912c14d69500d0f89922
 
  4.Once all prompts are answered, a password matching the selected criteria will be generated.
 
